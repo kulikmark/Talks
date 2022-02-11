@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast and secure way of talking worldwide." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fVW-Mq-UEH">
-                                <rect key="frame" x="39" y="467.66666666666669" width="350.33333333333331" height="23"/>
+                                <rect key="frame" x="39" y="468" width="350.33333333333331" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUW-MF-WvT">
-                                <rect key="frame" x="114" y="540.66666666666663" width="200" height="50"/>
+                                <rect key="frame" x="114" y="541" width="200" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="HHE-iD-2eS"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Yta-Zh-Ls4"/>
@@ -40,8 +40,8 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-s6-Hgv">
-                                <rect key="frame" x="177" y="429" width="74" height="28.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to talks!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-s6-Hgv">
+                                <rect key="frame" x="114.66666666666669" y="429" width="199" height="29"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
