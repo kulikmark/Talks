@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Talks" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast and secure way of talking worldwide." textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fVW-Mq-UEH">
+                                <rect key="frame" x="39" y="467.66666666666669" width="350.33333333333331" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TalksIcon" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-kG-nKw">
+                                <rect key="frame" x="109" y="159" width="210" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="SrP-K3-NfQ"/>
+                                    <constraint firstAttribute="width" constant="210" id="Y01-bi-vg9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUW-MF-WvT">
+                                <rect key="frame" x="114" y="540.66666666666663" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HHE-iD-2eS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Yta-Zh-Ls4"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.23529411764705882" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Talking">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="19"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TALKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekX-s6-Hgv">
+                                <rect key="frame" x="177" y="429" width="74" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ekX-s6-Hgv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ds-Z5-BYj"/>
+                            <constraint firstItem="SUW-MF-WvT" firstAttribute="top" secondItem="fVW-Mq-UEH" secondAttribute="bottom" constant="50" id="ILS-NP-tOq"/>
+                            <constraint firstItem="SUW-MF-WvT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OvF-q2-NyO"/>
+                            <constraint firstItem="o4Q-kG-nKw" firstAttribute="centerX" secondItem="ekX-s6-Hgv" secondAttribute="centerX" id="TxI-LC-tkK"/>
+                            <constraint firstItem="ekX-s6-Hgv" firstAttribute="top" secondItem="o4Q-kG-nKw" secondAttribute="bottom" constant="60" id="ULT-oJ-Rv0"/>
+                            <constraint firstItem="o4Q-kG-nKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="etV-Lc-JnI"/>
+                            <constraint firstItem="o4Q-kG-nKw" firstAttribute="centerX" secondItem="fVW-Mq-UEH" secondAttribute="centerX" id="hSm-Ee-Onc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fVW-Mq-UEH" secondAttribute="trailing" id="j2X-Jt-Iee"/>
+                            <constraint firstItem="fVW-Mq-UEH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jX2-ry-fCG"/>
+                            <constraint firstItem="fVW-Mq-UEH" firstAttribute="top" secondItem="ekX-s6-Hgv" secondAttribute="bottom" constant="10" id="v9e-pp-uA0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.77570093457942" y="105.61555075593954"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="TalksIcon" width="900" height="900"/>
+    </resources>
 </document>
